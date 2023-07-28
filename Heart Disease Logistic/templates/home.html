@@ -1,0 +1,95 @@
+<html>
+    <body bgcolor=#F0F8FF>
+    
+     
+     
+        <center>
+
+        <h1> Heart Disease Detector  </h1><br>
+        
+        <table>
+            <tr>
+              <th>Feature</th>
+              <th>What it means</th>
+            </tr>
+            <tr>
+             <td>Age</td>
+             <td>Their birth year minus the current year</td>
+            </tr>
+            <tr>
+             <td>Trestbps</td>
+             <td>resting blood pressure (in mm Hg on admission to the hospital)</td>
+            </tr>
+            <tr>
+             <td>Chol</td>
+             <td>serum cholesterol in mg/dl</td>
+            </tr>
+            <tr>
+             <td>Thalach</td>
+             <td>maximum heart rate achieved</td>
+            </tr>
+            <tr>
+             <td>Sex</td>
+             <td>sex (1 = male; 0 = female)</td>
+            </tr>
+            <tr>
+             <td>Cp</td>
+             <td>chest pain type
+                 1: typical angina
+                 2: atypical angina
+                 3: non-anginal pain
+                 4: asymptomatic</td>
+            </tr>
+            <tr>
+             <td>Restecg</td>
+             <td>resting electrocardiographic results</td>
+            </tr>
+            <tr>
+             <td>Exang</td>
+             <td>exercise-induced angina (1 = yes; 0 = no)</td>
+            </tr>
+            <tr>
+             <td>Ca</td>
+             <td>number of major vessels (0-3) colored by fluoroscopy</td>
+            </tr>
+            <tr>
+             <td>Thal</td>
+             <td>thallium stress test</td>
+            </tr>
+            
+          </table>
+          <br></br>
+          <br></br>
+          
+
+        <form method="POST", action="{{url_for('home')}}">
+           <b> Age :  <input type="text", name='a', placeholder="enter 1"> <br><br>
+            Trestbps :  <input type="text", name='b', placeholder="enter 2"> <br><br>
+            Chol :  <input type="text", name='c', placeholder="enter 3"> <br><br>
+            Thalach : <input type="text", name='d', placeholder="enter 4"> <br><br>
+            Sex :  <input type="text", name='e', placeholder="enter 5"> <br><br>
+            Cp :  <input type="text", name='f', placeholder="enter 6"> <br><br>
+            Restecg :  <input type="text", name='g', placeholder="enter 7"> <br><br>
+            Exang :  <input type="text", name='h', placeholder="enter 8"> <br><br>
+            Ca :  <input type="text", name='i', placeholder="enter 9"> <br><br>
+            Thal :  <input type="text", name='j', placeholder="enter 10"> <br><br><br></b>
+            
+            
+            <input type="submit" , value='predict!' >
+        </form>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj6ToOv_clqIgDS-tzSHHKhkwHX0uqjO45PA&usqp=CAU" alt="Heart">
+        
+    </center>
+
+
+
+
+
+
+    </body>
+</html>
+
+
+
+
