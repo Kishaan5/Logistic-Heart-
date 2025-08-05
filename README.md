@@ -1,1 +1,1 @@
-# Logistic-Heart-
+# Heart Disease Classifier
